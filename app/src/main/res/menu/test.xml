@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/browser"
+        android:orderInCategory="100"
+        android:title="@string/browser"
+        android:icon="@drawable/ic_browser"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/downloads"
+        android:orderInCategory="100"
+        android:title="@string/downloads"
+        android:icon="@drawable/ic_file_download_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/bookmarks"
+        android:orderInCategory="100"
+        android:title="@string/bookmarks"
+        android:icon="@drawable/ic_bookmark_border_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/history"
+        android:orderInCategory="100"
+        android:title="@string/history"
+        android:icon="@drawable/ic_history_black_24dp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/privacy"
+        android:orderInCategory="100"
+        android:title="Privacy Policy"
+        android:icon="@drawable/ic_about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="@string/about_name"
+        android:icon="@drawable/ic_about"
+        app:showAsAction="never" />
+</menu>

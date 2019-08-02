@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     LM videodownloader is a browser app for android, made to easily
+  ~     download videos.
+  ~     Copyright (C) 2018 Loremar Marabillas
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+    <color name="colorPrimary">#067DF1</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="darkGray">#A3A5A9</color>
+    <color name="primaryColor">#FFFFFF</color>
+    <color name="secondaryColor">#FFFFFF</color>
+    <color name="tertiaryColor">#E0E0E0</color>
+    <color name="darkColor">#676767</color>
+
+    <color name="facebook">#1476D2</color>
+    <color name="instagram">#EC1C65</color>
+    <color name="vimeo">#00BCD4</color>
+    <color name="dailymotion">#0066DC</color>
+    <color name="vlive">#54F7FF</color>
+    <color name="twitter">#00A9F4</color>
+    <color name="vine">#27A69A</color>
+    <color name="vk">#1C88E5</color>
+    <color name="tumblr">#38464E</color>
+    <color name="myspace">#38464E</color>
+    <color name="youku">#D8D6D6</color>
+    <color name="tudou">#FF5F07</color>
+</resources>

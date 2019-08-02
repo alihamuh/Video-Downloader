@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     LM videodownloader is a browser app for android, made to easily
+  ~     download videos.
+  ~     Copyright (C) 2018 Loremar Marabillas
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/download_item_background"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/downloadVideoName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/downloadVideoExt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/downloadVideoName"
+                    app:layout_constraintStart_toEndOf="@id/downloadVideoName"
+                    app:layout_constraintTop_toTopOf="@id/downloadVideoName" />
+
+                <ImageView
+                    android:id="@+id/deleteDownloadItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:tint="@color/secondaryColor"
+                    app:layout_constraintBottom_toBottomOf="@id/downloadVideoName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/downloadVideoName"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/renameDownloadVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:tint="@color/secondaryColor"
+                    app:layout_constraintBottom_toBottomOf="@id/downloadVideoName"
+                    app:layout_constraintEnd_toStartOf="@id/deleteDownloadItem"
+                    app:layout_constraintTop_toTopOf="@id/downloadVideoName"
+                    tools:ignore="ContentDescription" />
+
+                <ProgressBar
+                    android:id="@+id/downloadProgressBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:indeterminateDrawable="@drawable/download_progress_bar"
+                    android:indeterminateDuration="1000"
+                    android:indeterminateOnly="false"
+                    android:max="100"
+                    android:progressDrawable="@color/tertiaryColor"
+                    app:layout_constraintTop_toBottomOf="@id/downloadVideoName" />
+
+                <TextView
+                    android:id="@+id/downloadProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/downloadProgressBar" />
+
+                <pheonix.KingKongVid.downloaaderVideoPackage.utils.CustomButton
+                    android:id="@+id/moveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/move"
+                    app:layout_constraintBottom_toBottomOf="@id/downloadProgressText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/downloadProgressText" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+

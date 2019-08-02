@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/home"
+            android:orderInCategory="100"
+            android:title="@string/home"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/browser"
+            android:orderInCategory="100"
+            android:title="@string/browser"
+            app:showAsAction="never" />
+    <item
+        android:id="@+id/downloads"
+        android:orderInCategory="100"
+        android:title="@string/downloads"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/bookmarks"
+        android:orderInCategory="100"
+        android:title="@string/bookmarks"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/history"
+        android:orderInCategory="100"
+        android:title="@string/history"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+
+
+
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     LM videodownloader is a browser app for android, made to easily
+  ~     download videos.
+  ~     Copyright (C) 2018 Loremar Marabillas
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="?attr/actionBarSize"
+    android:background="@color/darkGray">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/downloadsTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/primaryColor">
+
+
+
+        <TextView
+            android:id="@+id/downloadSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/remaining"
+            android:text="@string/speed_0"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/downloadSpeed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/remaining_undefine"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/downloadsTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/downloadsTopBar"
+        android:orientation="horizontal"
+        android:background="@color/darkGray">
+
+        <TextView
+            android:id="@+id/inProgressTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/secondaryColor"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/completedTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/secondaryColor"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/inactiveTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/downloadsPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/downloadsTabs"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/main_arrow_back"
+        android:title="Back"
+        android:icon="@drawable/ic_arrow_back_black_24dp" />
+    <item
+        android:id="@+id/main_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home_black_24dp" />
+    <item
+        android:id="@+id/main_arrow_forward"
+        android:orderInCategory="100"
+        android:title="@string/next"
+        android:icon="@drawable/ic_arrow_forward_black"/>
+    <item
+        android:id="@+id/main_bookmark"
+        android:orderInCategory="100"
+        android:title="bookmark"
+        android:icon="@drawable/ic_bookmark"/>
+</menu>
